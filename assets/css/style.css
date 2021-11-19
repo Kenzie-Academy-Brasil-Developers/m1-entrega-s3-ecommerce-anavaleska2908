@@ -3,6 +3,7 @@
   --titulo-color: #000000;
   --tarja-color: #ffffff;
   --text-color: #828282;
+  --primary-color: #2e245e;
   --terciary-color: #f5f5f5;
   --secundary-color: #6b54de;
 }
@@ -85,7 +86,7 @@ figcaption {
   color: var(--tarja-color);
   font-size: 0.75rem;
   line-height: 1rem;
-  background-color: var(--secundary-color);
+  background-color: var(--primary-color);
   width: 2.8em;
   height: 1.2rem;
   margin-top: 1.2em;
@@ -140,14 +141,18 @@ figcaption {
   font-weight: 600;
   font-size: 0.9em;
   line-height: 1rem;
-  color: var(--secundary-color);
+  color: var(--primary-color);
 }
 
-.card_carrinhoCompras a {
+.card_carrinhoCompras button {
   font-size: 0.9em;
   line-height: 1rem;
-  color: var(--text-color);
   margin-left: 1.1em;
+  color: var(--text-color);
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
 }
 
 .area__pesquisaCarrinho {
@@ -196,7 +201,7 @@ figcaption {
 .carrinho__titulo p {
   color: var(--tarja-color);
   font-weight: 700;
-  font-size: 1.65em;
+  font-size: 1.125em;
   text-align: center;
 }
 
@@ -211,14 +216,14 @@ figcaption {
 
 .quantidade__produtos {
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.375em;
   color: var(--titulo-color);
   text-align: center;
 }
 
 .mais__produtos {
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 0.875em;
   color: var(--text-color);
   text-align: center;
   margin-top: 0.5em;
@@ -321,7 +326,8 @@ figcaption {
     background-color: var(--secundary-color);
   }
 
-  .card_carrinhoCompras a:hover {
+  .card_carrinhoCompras button:hover {
+    background-color: var(--secundary-color);
     color: var(--terciary-color);
     text-decoration: none;
   }
@@ -334,9 +340,5 @@ figcaption {
 
   .button__pesquisa {
     width: 7.2em;
-  }
-
-  .mais__produtos {
-    font-size: 1em;
   }
 }
