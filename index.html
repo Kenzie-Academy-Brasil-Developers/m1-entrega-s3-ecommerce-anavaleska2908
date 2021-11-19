@@ -5,18 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@100&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>E-commerce - Loja de games</title>
   </head>
   <body>
     <!-- header com logo, botões de navegação -->
     <header>
-      <h1></h1>
-      <nav>
+      <h1>Play<span>Store</span>.</h1>
+      <nav class="navegador">
+        <figure class="navegador__mobile">
+          <img src="./assets/img/menu.svg" alt="menu hamburguer" />
+        </figure>
+        <figcaption>Menu Hamburguer</figcaption>
         <ul>
           <li>Todos</li>
           <li>PC</li>
-          <li>Xbox 360</li>
+          <li>Xbox One</li>
           <li>PS4</li>
           <li>PS5</li>
         </ul>
@@ -28,230 +38,291 @@
     cards com titulo, foto, descrição, preço e um botão para adicionar ao carrinho
     -->
     <main class="vitrine">
-      <div class="cardGrupo">
-        <div class="card cardGrupo__card">
-          <div class="cardGrupo__imagem">
-            <figure>
-              <img
-                src="./assets/img/returnal.jpg"
-                alt="Capa do Jogo Returnal"
-              />
-              <figcaption>Returnal - Deluxe Edition para PS5</figcaption>
-            </figure>
+      <section class="cardGrupo__section">
+        <div class="cardGrupo">
+          <div class="card cardGrupo__card">
+            <div class="card__imagem">
+              <figure>
+                <img
+                  src="./assets/img/returnal.jpg"
+                  alt="Capa do Jogo Returnal"
+                />
+                <figcaption>Returnal - Deluxe Edition para PS5</figcaption>
+              </figure>
+            </div>
+            <div class="card__marcador">
+              <p>PS5</p>
+            </div>
+            <div class="card__nomeJogo">
+              <p><span>Returnal</span></p>
+            </div>
+            <div class="card__descricaoTexto">
+              <p>Texto descritivo do jogo</p>
+            </div>
+            <div class="card__preco">
+              <p>R$ 400.00</p>
+            </div>
+            <div class="card_carrinhoCompras">
+              <a class="link__carrinhoCompras" href="#"
+                >Adicionar ao carrinho</a
+              >
+            </div>
           </div>
-          <div class="card__marcador">PS5</div>
-          <div class="card__nomeJogo">Returnal - Deluxe Edition</div>
-          <div class="card__descricaoTexto">Texto descritivo do jogo</div>
-          <div class="card__preco">R$ 400.00</div>
-          <div class="cardGrupo card_carrinhoCompras">
-            <a class="link__carrinhoCompras" href="#">Adicionar ao carrinho</a>
+          <div class="card cardGrupo__card">
+            <div class="card__imagem">
+              <figure>
+                <img
+                  src="./assets/img/theWitcher3.jpg"
+                  alt="Capa do Jogo The Witcher 3"
+                />
+                <figcaption>
+                  The Witcher 3: Wild Hunt Complete Edition para Xbox One
+                </figcaption>
+              </figure>
+            </div>
+            <div class="card__marcador marcador__xboxOne">
+              <p>Xbox One</p>
+            </div>
+            <div class="card__nomeJogo">
+              <p><span>The Witcher 3: Wild Hunter</span></p>
+            </div>
+            <div class="card__descricaoTexto">
+              <p>Texto descritivo do jogo</p>
+            </div>
+            <div class="card__preco">
+              <p>R$ 179.90</p>
+            </div>
+            <div class="card_carrinhoCompras">
+              <a class="link__carrinhoCompras" href="#"
+                >Adicionar ao carrinho</a
+              >
+            </div>
+          </div>
+          <div class="card cardGrupo__card">
+            <div class="card__imagem">
+              <figure>
+                <img
+                  src="./assets/img/dai3.png"
+                  alt="Capa do Jogo Dragon Age Inquisition"
+                />
+                <figcaption>
+                  Dragon Age Inquisition - Game of the Year Edition para PC
+                </figcaption>
+              </figure>
+            </div>
+            <div class="card__marcador">
+              <p>PC</p>
+            </div>
+            <div class="card__nomeJogo">
+              <p>
+                <span> Dragon Age Inquisition</span>
+              </p>
+            </div>
+            <div class="card__descricaoTexto">
+              <p>Texto descritivo do jogo</p>
+            </div>
+            <div class="card__preco">
+              <p>R$ 199.00</p>
+            </div>
+            <div class="card_carrinhoCompras">
+              <a class="link__carrinhoCompras" href="#"
+                >Adicionar ao carrinho</a
+              >
+            </div>
+          </div>
+          <div class="card cardGrupo__card">
+            <div class="card__imagem">
+              <figure>
+                <img
+                  src="./assets/img/theLastOfUsResmatered.jpg"
+                  alt="Capa do Jogo The Last Of Us Resmaterizado"
+                />
+                <figcaption>The Last of Us: Resmaterizado</figcaption>
+              </figure>
+            </div>
+            <div class="card__marcador">
+              <p>PS4</p>
+            </div>
+            <div class="card__nomeJogo">
+              <p><span>The Last of Us Remasterizado</span></p>
+            </div>
+            <div class="card__descricaoTexto">
+              <p>Texto descritivo do jogo</p>
+            </div>
+            <div class="card__preco">
+              <p>R$ 70.00</p>
+            </div>
+            <div class="card_carrinhoCompras">
+              <a class="link__carrinhoCompras" href="#"
+                >Adicionar ao carrinho</a
+              >
+            </div>
+          </div>
+          <div class="card cardGrupo__card">
+            <div class="card__imagem">
+              <figure>
+                <img
+                  src="./assets/img/theLastOfUs2.jpg"
+                  alt="Capa do Jogo The Last Of Us - Parte 2"
+                />
+                <figcaption>
+                  The Last Of Us: Parte 2 - Deluxe Edition para PS4
+                </figcaption>
+              </figure>
+            </div>
+            <div class="card__marcador">
+              <p>PS4</p>
+            </div>
+            <div class="card__nomeJogo">
+              <p><span>The Last Of Us: Parte 2</span></p>
+            </div>
+            <div class="card__descricaoTexto">
+              <p>Texto descritivo do jogo</p>
+            </div>
+            <div class="card__preco">
+              <p>R$ 249.50</p>
+            </div>
+            <div class="card_carrinhoCompras">
+              <a class="link__carrinhoCompras" href="#"
+                >Adicionar ao carrinho</a
+              >
+            </div>
+          </div>
+          <div class="card cardGrupo__card">
+            <div class="card__imagem">
+              <figure>
+                <img
+                  src="./assets/img/riseTombRaider.png"
+                  alt="Capa do Jogo Rise of The Tomb Raider"
+                />
+                <figcaption>
+                  Rise of The Tomb Raider - 20 Year Celebration para PC
+                </figcaption>
+              </figure>
+            </div>
+            <div class="card__marcador">
+              <p>PC</p>
+            </div>
+            <div class="card__nomeJogo">
+              <p><span>Rise of The Tomb Raider</span></p>
+            </div>
+            <div class="card__descricaoTexto">
+              <p>Texto descritivo do jogo</p>
+            </div>
+            <div class="card__preco">
+              <p>R$ 85.00</p>
+            </div>
+            <div class="card_carrinhoCompras">
+              <a class="link__carrinhoCompras" href="#"
+                >Adicionar ao carrinho</a
+              >
+            </div>
+          </div>
+          <div class="card cardGrupo__card">
+            <div class="card__imagem">
+              <figure>
+                <img
+                  src="./assets/img/farcry.jpg"
+                  alt="Capa do Jogo Far Cry Primal"
+                />
+                <figcaption>
+                  Far Cry Primal - Collectors Edition para PC
+                </figcaption>
+              </figure>
+            </div>
+            <div class="card__marcador">
+              <p>PC</p>
+            </div>
+            <div class="card__nomeJogo">
+              <p><span>Far Cry Primal</span></p>
+            </div>
+            <div class="card__descricaoTexto">
+              <p>Texto descritivo do jogo</p>
+            </div>
+            <div class="card__preco"><p>R$ 363.00</p></div>
+            <div class="card_carrinhoCompras">
+              <a class="link__carrinhoCompras" href="#"
+                >Adicionar ao carrinho</a
+              >
+            </div>
+          </div>
+          <div class="card cardGrupo__card">
+            <div class="card__imagem">
+              <figure>
+                <img
+                  src="./assets/img/Bayonetta.jpg"
+                  alt="Capa do Jogo Bayonetta"
+                />
+                <figcaption>Bayonetta - Deluxe Edition para PC</figcaption>
+              </figure>
+            </div>
+            <div class="card__marcador"><p>PC</p></div>
+            <div class="card__nomeJogo">
+              <p><span>Bayonetta</span></p>
+            </div>
+            <div class="card__descricaoTexto">
+              <p>Texto descritivo do jogo</p>
+            </div>
+            <div class="card__preco"><p>R$ 90.97</p></div>
+            <div class="card_carrinhoCompras">
+              <a class="link__carrinhoCompras" href="#"
+                >Adicionar ao carrinho</a
+              >
+            </div>
+          </div>
+          <div class="card cardGrupo__card">
+            <div class="card__imagem">
+              <figure>
+                <img
+                  src="./assets/img/massEffectA.jpg"
+                  alt="Capa do Jogo Mass Effect Andromeda"
+                />
+                <figcaption>
+                  Mass Effect Andromeda - Deluxe Edition para PC
+                </figcaption>
+              </figure>
+            </div>
+            <div class="card__marcador"><p>PC</p></div>
+            <div class="card__nomeJogo">
+              <p><span>Mass Effect Andromeda</span></p>
+            </div>
+            <div class="card__descricaoTexto">
+              <p>Texto descritivo do jogo</p>
+            </div>
+            <div class="card__preco"><p>R$ 89.00</p></div>
+            <div class="card_carrinhoCompras">
+              <a class="link__carrinhoCompras" href="#"
+                >Adicionar ao carrinho</a
+              >
+            </div>
           </div>
         </div>
-        <div class="card cardGrupo__card">
-          <div class="cardGrupo__imagem">
-            <figure>
-              <img
-                src="./assets/img/theWitcher3.jpg"
-                alt="Capa do Jogo The Witcher 3"
-              />
-              <figcaption>
-                The Witcher 3: Wild Hunt Complete Edition para Xbox One
-              </figcaption>
-            </figure>
-          </div>
-          <div class="card__marcador">Xbox One</div>
-          <div class="card__nomeJogo">
-            The Witcher 3: Wild Hunter - Complete Edition
-          </div>
-          <div class="card__descricaoTexto">Texto descritivo do jogo</div>
-          <div class="card__preco">R$ 179.90</div>
-          <div class="cardGrupo card_carrinhoCompras">
-            <a class="link__carrinhoCompras" href="#">Adicionar ao carrinho</a>
-          </div>
-        </div>
-        <div class="card cardGrupo__card">
-          <div class="cardGrupo__imagem">
-            <figure>
-              <img
-                src="./assets/img/dai3.png"
-                alt="Capa do Jogo Dragon Age Inquisition"
-              />
-              <figcaption>
-                Dragon Age Inquisition - Game of the Year Edition para PC
-              </figcaption>
-            </figure>
-          </div>
-          <div class="card__marcador">PC</div>
-          <div class="card__nomeJogo">
-            Dragon Age Inquisition - Game of the Year Edition
-          </div>
-          <div class="card__descricaoTexto">Texto descritivo do jogo</div>
-          <div class="card__preco">R$ 199.00</div>
-          <div class="cardGrupo card_carrinhoCompras">
-            <a class="link__carrinhoCompras" href="#">Adicionar ao carrinho</a>
-          </div>
-        </div>
-        <div class="card cardGrupo__card">
-          <div class="cardGrupo__imagem">
-            <figure>
-              <img
-                src="./assets/img/theLastOfUsResmatered.jpg"
-                alt="Capa do Jogo The Last Of Us Resmaterizado"
-              />
-              <figcaption>The Last of Us: Resmaterizado</figcaption>
-            </figure>
-          </div>
-          <div class="card__marcador">PS4</div>
-          <div class="card__nomeJogo">The Last of Us Remasterizado</div>
-          <div class="card__descricaoTexto">Texto descritivo do jogo</div>
-          <div class="card__preco">R$ 70.00</div>
-          <div class="cardGrupo card_carrinhoCompras">
-            <a class="link__carrinhoCompras" href="#">Adicionar ao carrinho</a>
-          </div>
-        </div>
-        <div class="card cardGrupo__card">
-          <div class="cardGrupo__imagem">
-            <figure>
-              <img
-                src="./assets/img/theLastOfUs2.jpg"
-                alt="Capa do Jogo The Last Of Us - Parte 2"
-              />
-              <figcaption>
-                The Last Of Us: Parte 2 - Deluxe Edition para PS4
-              </figcaption>
-            </figure>
-          </div>
-          <div class="card__marcador">PS4</div>
-          <div class="card__nomeJogo">
-            The Last Of Us: Parte 2 - Deluxe Edition
-          </div>
-          <div class="card__descricaoTexto">Texto descritivo do jogo</div>
-          <div class="card__preco">R$ 249.50</div>
-          <div class="cardGrupo card_carrinhoCompras">
-            <a class="link__carrinhoCompras" href="#">Adicionar ao carrinho</a>
-          </div>
-        </div>
-        <div class="card cardGrupo__card">
-          <div class="cardGrupo__imagem">
-            <figure>
-              <img
-                src="./assets/img/riseTombRaider.png"
-                alt="Capa do Jogo Rise of The Tomb Raider"
-              />
-              <figcaption>
-                Rise of The Tomb Raider - 20 Year Celebration para PC
-              </figcaption>
-            </figure>
-          </div>
-          <div class="card__marcador">PC</div>
-          <div class="card__nomeJogo">
-            Rise of The Tomb Raider - 20 Year Celebration
-          </div>
-          <div class="card__descricaoTexto">Texto descritivo do jogo</div>
-          <div class="card__preco">R$ 85.00</div>
-          <div class="cardGrupo card_carrinhoCompras">
-            <a class="link__carrinhoCompras" href="#">Adicionar ao carrinho</a>
-          </div>
-        </div>
-        <div class="card cardGrupo__card">
-          <div class="cardGrupo__imagem">
-            <figure>
-              <img
-                src="./assets/img/farcry.jpg"
-                alt="Capa do Jogo Far Cry Primal"
-              />
-              <figcaption>
-                Far Cry Primal - Collectors Edition para PC
-              </figcaption>
-            </figure>
-          </div>
-          <div class="card__marcador">PC</div>
-          <div class="card__nomeJogo">Far Cry Primal - Collectors Edition</div>
-          <div class="card__descricaoTexto">Texto descritivo do jogo</div>
-          <div class="card__preco">R$ 363.00</div>
-          <div class="cardGrupo card_carrinhoCompras">
-            <a class="link__carrinhoCompras" href="#">Adicionar ao carrinho</a>
-          </div>
-        </div>
-        <div class="card cardGrupo__card">
-          <div class="cardGrupo__imagem">
-            <figure>
-              <img
-                src="./assets/img/Bayonetta.jpg"
-                alt="Capa do Jogo Bayonetta"
-              />
-              <figcaption>Bayonetta - Deluxe Edition para PC</figcaption>
-            </figure>
-          </div>
-          <div class="card__marcador">PC</div>
-          <div class="card__nomeJogo">Bayonetta - Deluxe Edition</div>
-          <div class="card__descricaoTexto">Texto descritivo do jogo</div>
-          <div class="card__preco">R$ 90.97</div>
-          <div class="cardGrupo card_carrinhoCompras">
-            <a class="link__carrinhoCompras" href="#">Adicionar ao carrinho</a>
-          </div>
-        </div>
-        <div class="card cardGrupo__card">
-          <div class="cardGrupo__imagem">
-            <figure>
-              <img
-                src="./assets/img/massEffectA.jpg"
-                alt="Capa do Jogo Mass Effect Andromeda"
-              />
-              <figcaption>
-                Mass Effect Andromeda - Deluxe Edition para PC
-              </figcaption>
-            </figure>
-          </div>
-          <div class="card__marcador">PC</div>
-          <div class="card__nomeJogo">
-            Mass Effect Andromeda - Deluxe Edition
-          </div>
-          <div class="card__descricaoTexto">Texto descritivo do jogo</div>
-          <div class="card__preco">R$ 89.00</div>
-          <div class="cardGrupo card_carrinhoCompras">
-            <a class="link__carrinhoCompras" href="#">Adicionar ao carrinho</a>
-          </div>
-        </div>
-        <div class="card cardGrupo__card">
-          <div class="cardGrupo__imagem">
-            <figure>
-              <img
-                src="./assets/img/returnal.jpg"
-                alt="Capa do Jogo Returnal"
-              />
-              <figcaption>Returnal - Edição digital deluxe para PS5</figcaption>
-            </figure>
-          </div>
-          <div class="card__marcador">PS5</div>
-          <div class="card__nomeJogo">Returnal - Edição Deluxe</div>
-          <div class="card__descricaoTexto">Texto descritivo do jogo</div>
-          <div class="card__preco">R$ 400.00</div>
-          <div class="cardGrupo card_carrinhoCompras">
-            <a class="link__carrinhoCompras" href="#">Adicionar ao carrinho</a>
-          </div>
-        </div>
-      </div>
-    </main>
+      </section>
 
-    <!-- barra de pesquisa, com input para colocar texto e botão para pesquisar -->
-    <section class="pesquisa__area">
-      <label for="input__pesquisa"></label>
-      <input
-        type="text"
-        name="pesquisa"
-        id="input__pesquisa"
-        placeholder="Digite aqui sua pesquisa"
-      />
-      <button class="button__pesquisa">Pesquisar</button>
-    </section>
-    <!-- carrinho de compras, iniciado vazio, mas será o local onde se colocará produtos posteriormente -->
-    <section class="carrinhoCompras">
-      <div class="carrinho_titulo">Carrinho de Compras</div>
-      <div>
-        Carrinho de compras
-        <p>Adicione itens</p>
-      </div>
-    </section>
+      <section class="area__pesquisaCarrinho">
+        <!-- barra de pesquisa, com input para colocar texto e botão para pesquisar -->
+        <section class="pesquisa__area">
+          <label for="input__pesquisa"></label>
+          <input
+            type="text"
+            name="pesquisa"
+            id="input__pesquisa"
+            class="input__pesquisa"
+            placeholder="Digite aqui sua pesquisa"
+          />
+          <button class="button__pesquisa">Pesquisar</button>
+        </section>
+        <!-- carrinho de compras, iniciado vazio, mas será o local onde se colocará produtos posteriormente -->
+        <section class="carrinhoCompras">
+          <div class="carrinho__titulo">
+            <p>Carrinho de Compras</p>
+          </div>
+          <div class="carrinho__corpo">
+            <p class="quantidade__produtos">Carrinho vazio</p>
+            <p class="mais__produtos">Adicione itens</p>
+          </div>
+        </section>
+      </section>
+    </main>
   </body>
 </html>

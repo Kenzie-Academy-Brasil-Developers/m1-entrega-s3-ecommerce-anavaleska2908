@@ -1,0 +1,385 @@
+:root {
+  --font-family: 'Inter', sans-serif;
+  --titulo-color: #000000;
+  --tarja-color: #ffffff;
+  --text-color: #828282;
+  --primary-color: #0b065b;
+  --terciary-color: #f5f5f5;
+  --secundary-color: #6b54de; /* #6043ef #6a5acd */
+}
+
+body {
+  font-family: var(--font-family);
+  width: 100%;
+}
+
+header {
+  background-color: var(--terciary-color);
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--titulo-color);
+  margin-top: 0.2rem;
+}
+
+header span {
+  color: var(--secundary-color);
+}
+
+.navegador__mobile {
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+
+.navegador ul {
+  display: none;
+}
+
+figcaption {
+  display: none;
+}
+
+.vitrine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardGrupo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+.cardGrupo__card {
+  width: 18em;
+  height: 22rem;
+  box-sizing: border-box;
+  border: 2px solid var(--terciary-color);
+  margin-bottom: 1em;
+}
+
+.cardGrupo__card:last-child {
+  margin-bottom: 0;
+}
+
+.card__imagem {
+  width: 17.9em;
+  height: auto;
+}
+
+.card__imagem img {
+  width: 17.85em;
+  height: 11em;
+}
+
+.card__marcador {
+  font-weight: 400;
+  color: var(--tarja-color);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background-color: var(--primary-color);
+  width: 2.8em;
+  height: 1.2rem;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  margin-left: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.marcador__xboxOne {
+  width: 5.5em;
+}
+
+.card__marcador p {
+  text-align: center;
+}
+
+.card__nomeJogo {
+  /* width: 20em; */
+  margin-bottom: 1em;
+  margin-left: 0.9em;
+}
+
+.card__nomeJogo p span {
+  font-weight: 700;
+  font-size: 1.1em;
+  color: var(--titulo-color);
+}
+
+.card__descricaoTexto {
+  width: 17em;
+  margin-bottom: 1em;
+  margin-left: 0.9em;
+}
+
+.card__descricaoTexto p {
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1rem;
+  color: var(--text-color);
+}
+
+.card__preco {
+  width: 17em;
+  height: 1em;
+  margin-bottom: 1em;
+  margin-left: 1.1em;
+}
+
+.card__preco p {
+  font-weight: 600;
+  font-size: 0.9em;
+  line-height: 1rem;
+  color: var(--primary-color);
+}
+
+.card_carrinhoCompras a {
+  font-size: 0.9em;
+  line-height: 1rem;
+  color: var(--text-color);
+  margin-left: 1.1em;
+}
+
+.area__pesquisaCarrinho {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pesquisa__area {
+  width: 18em;
+  margin-bottom: 1.5em;
+}
+
+.input__pesquisa {
+  box-sizing: border-box;
+  width: 13.8em;
+  height: 3.2em;
+  background-color: var(--terciary-color);
+  color: var(--text-color);
+  border: 0;
+  padding-left: 0.5em;
+}
+
+.button__pesquisa {
+  width: 7.2em;
+  height: 3.2em;
+  background-color: var(--secundary-color);
+  color: var(--tarja-color);
+  border: 0;
+}
+
+.carrinhoCompras {
+  width: 18em;
+}
+
+.carrinho__titulo {
+  height: 4em;
+  width: 17.9em;
+  background-color: var(--secundary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carrinho__titulo p {
+  color: var(--tarja-color);
+  font-weight: 700;
+  font-size: 1.65em;
+  text-align: center;
+}
+
+.carrinho__corpo {
+  width: 18em;
+  height: 20em;
+  background-color: var(--terciary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quantidade__produtos {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: var(--titulo-color);
+  text-align: center;
+}
+
+.mais__produtos {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 1024px) {
+  header {
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    font-size: 1.875em;
+    margin-top: 0;
+    line-height: 1.3em;
+    margin-left: 2em;
+  }
+
+  .navegador {
+    margin-right: 3em;
+  }
+
+  .navegador__mobile {
+    display: none;
+  }
+
+  .navegador ul {
+    display: inherit;
+    display: flex;
+  }
+
+  .navegador li {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1rem;
+    margin-right: 1em;
+    margin-top: 0.8em;
+  }
+
+  .navegador li:last-child {
+    margin-right: 0;
+  }
+
+  .navegador li:first-child {
+    color: var(--titulo-color);
+    font-weight: 600;
+  }
+
+  .vitrine {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .card__section {
+    margin-right: 0;
+  }
+
+  .cardGrupo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cardGrupo__card {
+    width: 16em;
+    height: 22rem;
+    margin-bottom: 2em;
+    margin-left: 2em;
+  }
+
+  .card__imagem {
+    width: 15.8em;
+  }
+
+  .card__imagem img {
+    width: 15.75em;
+    height: 10em;
+  }
+
+  .card__nomeJogo p span {
+    font-size: 1em;
+  }
+
+  .area__pesquisaCarrinho {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 4.5em;
+    margin-top: 2em;
+  }
+
+  .pesquisa__area {
+    width: 18em;
+    margin-bottom: 1.5em;
+  }
+
+  .input__pesquisa {
+    box-sizing: border-box;
+    width: 13.8em;
+    height: 3.2em;
+    background-color: var(--terciary-color);
+    color: var(--text-color);
+    border: 0;
+    padding-left: 0.5em;
+  }
+
+  .button__pesquisa {
+    width: 7.2em;
+    height: 3.2em;
+    background-color: var(--secundary-color);
+    color: var(--tarja-color);
+    border: 0;
+  }
+
+  .carrinhoCompras {
+    width: 18em;
+  }
+
+  .carrinho__titulo {
+    height: 4em;
+    width: 17.9em;
+    background-color: var(--secundary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .carrinho__titulo p {
+    color: var(--tarja-color);
+    font-weight: 700;
+    font-size: 1.65em;
+    text-align: center;
+  }
+
+  .carrinho__corpo {
+    width: 18em;
+    height: 20em;
+    background-color: var(--terciary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .quantidade__produtos {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: var(--titulo-color);
+    text-align: center;
+  }
+
+  .mais__produtos {
+    font-weight: 400;
+    font-size: 1em;
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 0.5em;
+  }
+}
