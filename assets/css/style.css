@@ -3,9 +3,8 @@
   --titulo-color: #000000;
   --tarja-color: #ffffff;
   --text-color: #828282;
-  --primary-color: #0b065b;
   --terciary-color: #f5f5f5;
-  --secundary-color: #6b54de; /* #6043ef #6a5acd */
+  --secundary-color: #6b54de;
 }
 
 body {
@@ -86,7 +85,7 @@ figcaption {
   color: var(--tarja-color);
   font-size: 0.75rem;
   line-height: 1rem;
-  background-color: var(--primary-color);
+  background-color: var(--secundary-color);
   width: 2.8em;
   height: 1.2rem;
   margin-top: 1.2em;
@@ -141,7 +140,7 @@ figcaption {
   font-weight: 600;
   font-size: 0.9em;
   line-height: 1rem;
-  color: var(--primary-color);
+  color: var(--secundary-color);
 }
 
 .card_carrinhoCompras a {
@@ -254,18 +253,25 @@ figcaption {
   }
 
   .navegador li {
-    font-size: 1rem;
-    color: var(--text-color);
-    line-height: 1rem;
     margin-right: 1em;
     margin-top: 0.8em;
   }
 
-  .navegador li:last-child {
+  .navegador li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+  }
+
+  .navegador li a:hover {
+    color: var(--secundary-color);
+  }
+
+  .navegador li:last-child a {
     margin-right: 0;
   }
 
-  .navegador li:first-child {
+  .navegador li:first-child a {
     color: var(--titulo-color);
     font-weight: 600;
   }
@@ -294,6 +300,10 @@ figcaption {
     margin-left: 2em;
   }
 
+  .cardGrupo__card:hover {
+    border: 2px solid var(--secundary-color);
+  }
+
   .card__imagem {
     width: 15.8em;
   }
@@ -305,6 +315,15 @@ figcaption {
 
   .card__nomeJogo p span {
     font-size: 1em;
+  }
+
+  .card_carrinhoCompras:hover {
+    background-color: var(--secundary-color);
+  }
+
+  .card_carrinhoCompras a:hover {
+    color: var(--terciary-color);
+    text-decoration: none;
   }
 
   .area__pesquisaCarrinho {
